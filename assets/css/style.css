@@ -1,0 +1,440 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Commom */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+    padding: 0;
+}
+.col2{
+    width: 50%;
+}
+
+.col3{
+    width: 33.33333%;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-color{
+    color: cornsilk !important;
+}
+
+.text-center{
+    /* display: inline-flex; */
+    text-align: center;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* main */
+#main{
+   background-color: cornsilk;
+   
+}
+
+#header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: black;
+    
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav .subnav{
+    /* position: absolute; */
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+    
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+
+#nav > li:hover > .subnav{
+    display: block;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    display: block;
+    line-height: 46px;
+    padding: 0 26px;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: cornsilk;
+    color:black;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#nav .icond{
+    font-size: 16px;
+
+}
+#header .menu-mobile:hover{
+    background-color: #cccc;
+}
+
+#header .search-btn:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+#header .menu-mobile{
+    float: right;
+
+}
+#header .search-btn{
+    display: block;
+    float: right;
+}
+#header .menu-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: blanchedalmond;
+    float: right;
+    font-size: 22px;
+    padding: 12px 29px;
+    display: none;
+
+}
+
+#header .search-icon{
+    color: blanchedalmond;
+    float: right;
+    font-size: 22px;
+    padding: 12px 29px;
+    /* line-height: 46px;
+    display: flex; */
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
+
+}
+
+#slider .text-slider{
+    text-align: center;
+    width: 100%;
+    color: cornsilk;
+    bottom: 48px;
+    text-shadow: 0 0 10px rgb(255 255 255);
+    position: absolute;
+}
+
+#slider .text-head{
+    font-weight: 100;
+    font-size: 24px;
+}
+
+#slider .text-content{
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+
+#content{
+    /* margin: 80px; */
+    /* background: #000; */
+}
+
+.about{
+    /* height: 986px; */
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px 64px;
+}
+
+.contact-conten{
+    margin-top: 48px;
+}
+
+.about .about-content{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.about .about-title{
+    padding: 10px 0;
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.about .about-slogan{
+    font-size: 15px;
+    opacity: 0.5;
+
+}
+
+.about .about-band{
+    margin: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+
+.about .member-name{
+    font-size: 15px;
+   
+    margin-bottom: 15px;
+}
+
+.about .member-img{
+    width: 156px;
+    border-radius: 4px;
+}
+
+.ticket-list .sold-out{
+    color: cornsilk;
+    background-color: red;
+    padding: 3px 4px;
+    border-radius: 4px;
+    margin-left: 16px;
+}
+
+
+.ticket-list .quanty{
+    padding: 6px 14px;
+    border-radius: 50%;
+    background-color: #000;
+    color: cornsilk;
+    margin-left: 16px;
+}
+
+.ticket-list li{
+    padding: 8px 16px;
+    border-bottom: solid 1px;
+}
+
+/* Places-list */
+.places-list{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover{
+    opacity: 0.6;
+}
+
+.places-body{
+    padding: 16px;
+    background-color: cornsilk;
+
+}
+
+.places-heading{
+    font-weight: 100;
+}
+
+.places-time{
+    font-size: 14px;
+    line-height: 48px;
+    opacity: 0.7;
+}
+
+.places-dsct{
+    
+}
+
+.places-btn{
+    display: block;
+    background-color: #000;
+    color: cornsilk;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.places-btn:hover{
+    background-color: crimson;
+    opacity: 0.8;
+}
+
+
+/* Tour selection */
+.tour{
+    background-color: #000;
+    margin: 0;
+
+}
+
+.ticket-list{
+    list-style: none;
+    background-color: cornsilk;
+}
+/* /tour selection */
+
+/* contact */
+.contact-li{
+    color: dimgrey;
+    text-align: left;
+    line-height: 28px;
+}
+
+.contact-li i[class*="ti-"]{
+    width: 48px;
+    display: inline-block;
+}
+
+.contact-li a {
+    color: turquoise;
+
+}
+
+.contact-li a:hover{
+    opacity: 0.6;
+}
+
+.contact-form{
+    text-align: left;
+}
+.contact-form .form-control{
+    padding: 8px;
+    width: 100%;
+    background-color: cornsilk;
+    border: 1px solid #666;
+    border-radius: 2px;
+}
+.form-submit{
+    color: cornsilk;
+    background-color: black;
+    border: none;
+    display: block;
+    float: right;
+    padding: 8px 28px;
+    margin: 16px 0px 16px;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+
+}
+
+.form-submit:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: cornsilk;
+    /* opacity: 0.8; */
+}
+.map-cont{
+    width: 100%;
+}
+
+/* footer */
+#footer {
+    background-color: cornsilk;
+    padding-top: 32px;
+    text-align: center;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.socials-list a{
+    letter-spacing: 5px;
+    color: #656565;
+    text-decoration: none;
+    font-size: 32px;
+
+}
+
+
+.socials-list a:hover {
+    opacity: 0.8;
+}
+
+.copyright{
+    color: #656565;
+}
+
+.copyrightp{
+    color: #656565;
+}
+
+.copyrightp:hover{
+    opacity: 0.8;
+}
+.linked{
+    margin: 12px 0 0px;
+}
